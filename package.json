@@ -22,6 +22,10 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006 -c .storybook"
+    "storybook": "start-storybook -p 6006 -c .storybook",
+    "deploy-storybook": "storybook-to-ghpages"
+  },
+  "devDependencies": {
+    "@storybook/storybook-deployer": "^2.8.1"
   }
 }
