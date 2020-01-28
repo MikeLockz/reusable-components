@@ -1,7 +1,7 @@
 import React from "react";
 import { withInfo } from "@storybook/addon-info";
 import { storiesOf } from "@storybook/react";
-import { color } from "@storybook/addon-knobs/react";
+import { boolean, text } from "@storybook/addon-knobs/react";
 import { Button } from "./Button";
 
 storiesOf("Button", module)
@@ -12,8 +12,7 @@ storiesOf("Button", module)
     }
   })
   .addWithJSX("with Background", () => (
-    <Button bg={color("bg color", "salmon")}>I am a button</Button>
-  ))
-  .addWithJSX("with green gackground", () => (
-    <Button bg="green">I am a green button</Button>
+    <Button disabled={boolean("disabled", false)}>
+      {text("text", "I am a button")}
+    </Button>
   ));
