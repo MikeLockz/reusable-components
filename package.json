@@ -26,6 +26,6 @@
     "deploy-storybook": "storybook-to-ghpages"
   },
   "devDependencies": {
-    "@storybook/storybook-deployer": "^2.8.1"
+    "@storybook/storybook-deployer": "^2.8.12"
   }
 }
